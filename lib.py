@@ -1,3 +1,5 @@
+###
+
 def read_content(file):
     return open(file).read()
 
@@ -11,4 +13,4 @@ def hash_display(file: str) -> str:
 
 
 def JTOI(file: str) -> str:
-    return "".join(map(lambda x: x if x != "J" else "I", open(file).readline()))
+    return "".join(map(lambda x: x if x != "J" else "I", open(file).read()))
